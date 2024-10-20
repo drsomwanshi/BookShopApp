@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Entry Details!"
+        android:textSize="14pt"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+    />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="14pt"
+    android:id="@+id/txtbname"
+    android:hint="Enter Book Name"
+    android:layout_margin="10dp"
+    ></EditText>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/img1"
+        android:scaleType="fitXY"
+
+        ></ImageView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Book Image"
+        android:textSize="14pt"
+        android:layout_margin="10dp"
+        android:onClick="getimage"
+        ></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Book"
+        android:textSize="14pt"
+        android:onClick="savebookdetail"
+        android:layout_margin="10dp"
+        ></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Book"
+        android:textSize="14pt"
+        android:onClick="showallbooks"
+        android:layout_margin="10dp"
+        ></Button>
+
+</LinearLayout>
